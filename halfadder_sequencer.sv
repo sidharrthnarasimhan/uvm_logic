@@ -25,7 +25,7 @@ class halfadder_sequence extends uvm_sequence#(halfadder_transaction);
 
 
          task body();
-              halfadder_transaction hs_tx;
+              halfadder_transaction ha_tx;
 
               repeat(15) begin
               ha_tx = halfadder_transaction::type_id::create(.name("ha_tx"), .contxt(get_full_name());
