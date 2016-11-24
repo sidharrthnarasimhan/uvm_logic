@@ -16,7 +16,7 @@ SIMV = ./simv +UVM_VERBOSITY=$(UVM_VERBOSITY) \
 x:	comp run 
 
 comp:
-	$(VCS) +incdir+. simpleadder_tb_top.sv
+	$(VCS) +incdir+. halfadder_tb_top.sv
 
 run:
 	$(SIMV)
